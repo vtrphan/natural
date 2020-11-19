@@ -22,7 +22,7 @@ THE SOFTWARE.
 
 var NGrams = require('../lib/natural/ngrams/ngrams');
 
-var text = require('spec/test_data/NYT-20150205-picassos-granddaughter-plans-to-sell-art-worrying-the-market.json');
+var text = require('./test_data/NYT-20150205-picassos-granddaughter-plans-to-sell-art-worrying-the-market.json');
 
 describe('ngrams', function() {
     it('should bigram a string via ngrams', function() {
@@ -120,14 +120,6 @@ describe('ngrams', function() {
             ['some', 'words', '[end]', '[end]'],
             ['words', '[end]', '[end]', '[end]']
         ]);
-    });
-    
-    it('should use french tokenizer', function(){
-        var T = require('../lib/natural/tokenizers/aggressive_tokenizer_fr');
-        var t = new T();
-        NGrams.setTokenizer(t);
-        expect(NGrams.ngrams('Un Éléphant rouge', 2)).toEqual([['Un', 'Éléphant'],
-            ['Éléphant', 'rouge' ]]);
     });
 
     it('should trigram a string via ngrams including statistics', function() {

@@ -2,41 +2,40 @@
   "name": "natural",
   "description": "General natural language (tokenizing, stemming (English, Russian, Spanish), part-of-speech tagging, sentiment analysis, classification, inflection, phonetics, tfidf, WordNet, jaro-winkler, Levenshtein distance, Dice's Coefficient) facilities for node.",
   "version": "2.1.5",
-  "homepage": "https://github.com/NaturalNode/natural",
+  "homepage": "https://github.com/vtrphan/natural.git",
   "repository": {
     "type": "git",
-    "url": "git://github.com/NaturalNode/natural.git"
+    "url": "git://github.com/vtrphan/natural.git"
   },
   "engines": {
     "node": ">=0.4.10"
   },
   "dependencies": {
-    "afinn-165": "^1.0.2",
+    "afinn-165": "^1.0.4",
     "apparatus": "^0.0.10",
     "json-stable-stringify": "^1.0.1",
-    "sylvester": "^0.0.12",
-    "underscore": "^1.9.1",
-    "webpack": "^4.29.0",
-    "wordnet-db": "^3.1.11"
+    "sylvester": "^0.0.21",
+    "underscore": "^1.11.0",
+    "wordnet-db": "^3.1.14"
   },
   "devDependencies": {
     "browserfs": "^1.4.3",
-    "gulp": "^4.0.0",
+    "gulp": "^4.0.2",
     "gulp-jasmine": "^4.0.0",
     "gulp-jasmine-browser": "^4.1.0",
-    "jasmine": "^3.3.1",
-    "jasmine-core": "^3.3.0",
+    "jasmine": "^3.6.3",
+    "jasmine-core": "^3.6.0",
     "pegjs": "^0.10.0",
-    "proxyquire": "^1.8.0",
-    "rimraf": "^2.6.3",
-    "sinon": "^1.12.2",
+    "proxyquire": "^2.1.3",
+    "rimraf": "^3.0.2",
+    "sinon": "^9.2.1",
     "uubench": "^0.0.1",
-    "webpack-stream": "^5.2.1"
+    "webpack-stream": "^6.1.1"
   },
   "scripts": {
     "benchmark": "node benchmarks",
     "clean": "rimraf *~ #* *classifier.json",
-    "test": "NODE_PATH=. node ./node_modules/jasmine/bin/jasmine.js --random=false spec/*_spec.js",
+    "test": "node ./node_modules/jasmine/bin/jasmine.js --random=false spec/*_spec.js",
     "test_io": "NODE_PATH=. node ./node_modules/jasmine/bin/jasmine.js --random=false io_spec/*_spec.js"
   },
   "license": "MIT",

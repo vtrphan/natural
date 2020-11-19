@@ -17,11 +17,10 @@
 */
 
 var natural = require('../lib/natural');
+var englishSentences = require('./test_data/NYT-20150205-picassos-granddaughter-plans-to-sell-art-worrying-the-market.json').sentences;
+var englishTagResults = require('./test_data/NYT-20150205-picassos-granddaughter-plans_expected_tag_results.json').results;
 
-var englishSentences = require('spec/test_data/NYT-20150205-picassos-granddaughter-plans-to-sell-art-worrying-the-market.json').sentences;
-var englishTagResults = require('spec/test_data/NYT-20150205-picassos-granddaughter-plans_expected_tag_results.json').results;
-
-var dutchSentences = require('spec/test_data/Volkskrant-20150205-Knot-geldpers-aanzetten-is-paardenmiddel-voor-half-procent-inflatie.json').sentences;
+var dutchSentences = require('./test_data/Volkskrant-20150205-Knot-geldpers-aanzetten-is-paardenmiddel-voor-half-procent-inflatie.json').sentences;
 
 var DEBUG = false;
 

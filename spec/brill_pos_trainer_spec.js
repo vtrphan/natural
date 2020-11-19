@@ -24,7 +24,7 @@ const DEBUG = false;
 const BROWN = 1;
 const JSON_FLAG = 2;
 
-var brownCorpus = require('spec/test_data/browntag_nolines_excerpt.json');
+var brownCorpus = require('./test_data/browntag_nolines_excerpt.json');
 
 function selectRuleTemplates(templateNames) {
   var templates = [];
